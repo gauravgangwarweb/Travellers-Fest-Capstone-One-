@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+.main {
+  height: 600px;
+  background-image: url('./Assets/flat-lay-yellow-luggage-with-copy-space.jpg');
+  background-size: cover;
+}
+
+.main-p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.main h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url('./Assets/aerial-shot-boat-spiti-river-india.jpg');
+  background-position: center;
+  color: transparent;
+}
+
+.date {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.venue {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.features {
+  background-color: #272a31;
+  background-image: url(./Assets/pattern-bg.png);
+}
+
+.features h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.cards h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
