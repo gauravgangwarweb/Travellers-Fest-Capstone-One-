@@ -1,19 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .main {
   height: 600px;
   background-image: url('./Assets/flat-lay-yellow-luggage-with-copy-space.jpg');
-  background-size: cover;
+  background-size: 100% 140%;
+}
+
+.about {
+  height: 600px;
+}
+
+.about::before {
+  content: '';
+  background: url('./Assets/men-stand-watch-mountains-tropical-forests-with-backpacks-forest-adventure-traveling-climbing.jpg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .main-p {
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
 .main h1 {
-  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url('./Assets/aerial-shot-boat-spiti-river-india.jpg');
+  background-position: center;
+  color: transparent;
+}
+
+.about h1 {
   font-weight: 900;
   -webkit-background-clip: text;
   background-clip: text;
@@ -23,12 +50,10 @@
 }
 
 .date {
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
 .venue {
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
@@ -38,11 +63,113 @@
 }
 
 .features h2 {
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
 .cards h3 {
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
+}
+
+.staff h2 {
+  font-weight: 900;
+}
+
+.staff-cards h4 {
+  font-weight: 900;
+}
+
+.staff-img {
+  margin-top: -80%;
+}
+
+.before-img {
+  margin-left: -25%;
+}
+
+.exp-card1 {
+  position: relative;
+  transition: background-color 3s;
+}
+
+.exp-card1::before {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url('./Assets/group-diverse-people-attending-startup-business-course.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exp-card2 {
+  position: relative;
+  transition: background-color 3s;
+}
+
+.exp-card2::before {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url('./Assets/group-diverse-friends-taking-photo-together.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.staff-cards:nth-child(3),
+.staff-cards:nth-child(4),
+.staff-cards:nth-child(5),
+.staff-cards:nth-child(6) {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-size: 120% 120%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .staff-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .sec-staff {
+    display: none;
+  }
+
+  .staff-img {
+    margin-top: -80%;
+    margin-left: 20%;
+  }
+
+  .about {
+    padding-top: 20vw;
+  }
+
+  .about-para {
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+
+  .hideSec {
+    display: none !important;
+  }
+
+  .staff-cards:nth-child(3),
+  .staff-cards:nth-child(4),
+  .staff-cards:nth-child(5),
+  .staff-cards:nth-child(6) {
+    display: none;
+  }
 }

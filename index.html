@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travellers Feast</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/b45a87b3cb.js" crossorigin="anonymous"></script>
@@ -26,30 +27,44 @@
         </div>
         <div class="hidden md:flex gap-20 text-grey items-center">
             <div class="flex gap-16">
-              <a href="#">About</a>
-              <a href="#">Program</a>
-              <a href="#">Join</a>
-              <a href="#">Sponsor</a>
-              <a href="#">News</a>
+              <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="./about.html">About</a>
+              <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">Program</a>
+              <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">Join</a>
+              <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">Sponsor</a>
+              <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">News</a>
             </div>
             <div>
-                <button class="border-2 border-orange-400 p-2">CC Campaign</button>
+                <button class="border-2 border-orange-400 p-2 hover:bg-[#ec5242] hover:text-white active:border-2 active:border-white" type="button">CC Campaign</button>
             </div>
         </div>
     </nav>
+    
+    <!-- Mobile-menu -->
+   
+    <div class="mobile-menu md:hidden absolute top-4">
+      <i id="active-menu" class="absolute top-[-5px] left-4 fa-2x fa-solid fa-bars md:hidden"></i>
+    </div>
+    <div id="hamburger-menu" class="md:hidden absolute hidden h-[100%] w-[100%] bg-[#272a31] text-center justify-center">
+      <i id="close-menu" class="absolute text-white top-4 left-4 fa-2x fa-solid fa-xmark"></i>
+      <ul class="flex flex-col justify-center gap-6">
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="./about.html">About</a></li>
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="#">Join</a></li>
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="#">Sponsar</a></li>
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="#">News</a></li>
+      </ul>
+    </div>
   </header>
   <section>
     <div class="main md:pl-20 flex justify-center flex-col">
       <div class="mobile-menu md:hidden absolute top-4 left-4">
-        <i class="fa-solid fa-bars md:hidden h-20 w-[6vw]"></i>
       </div>
       <div>
         <p class="text-[6vw] text-[#f37048] main-p md:text-[3vw]">"Hello! Aspiring Travellers"</p>
         <h1 class="text-[10vw] md:text-[5vw]">Travellers Fest 2022</h1>
         <div class="text-center md:w-[55vw] border-2 border-orange-100">
-          <p class="p-3 md:p-7">We are holding 5 days long travel fest in partnership with ryzen hotels. During the five day period famous travellers will give talks on the value of travel in one's life and how to do it properly.</p>
+          <p class="p-5 md:p-3 md:p-7">We are holding 5 days long travel fest in partnership with ryzen hotels. During the five day period famous travellers will give talks on the value of travel in one's life and how to do it properly.</p>
         </div>
-        <p class="date text-[2vw] text-[#595959]">2020.12.15(THU) ~ 16(FRI)</p>
+        <p class="date md:text-[2vw] text-[#595959] animate-pulse">2020.12.15(THU) ~ 16(FRI)</p>
         <p class="venue">@ Ryzen Hotel California, US</p>
       </div>
     </div>
@@ -58,35 +73,83 @@
 <!-- features -->
 
   <section class="features">
-    <h2 class="text-center text-white text-[2.5vw] pt-6">Features</h2>
-    <div class="flex justify-center pt-[10vh] pb-[10vh]">
-      <div class="cards w-[15%] m-[0.5vw] text-center flex flex-col gap-5 bg-white/10 p-7">
-        <i class="text-white fa-2x fa-solid fa-earth-americas"></i>
-        <h3 class="text-[1.3vw] text-[#fa4f40]">Around the world</h3>
+    <h2 class="text-center text-white text-[8vw] md:text-[2.5vw] pt-6 md:pt-3 hover:text-[#ec5242]">Features</h2>
+    <hr class="bg-red-500 h-1 w-[55px] m-auto">
+    <div class="md:flex justify-center pt-[5vh] pb-[5vh] md:pt-[7vh] md:pb-[7vh]">
+      <div class="cards md:w-[15%] my-[0.5vw] mx-1 text-center flex md:flex-col items-center gap-5 bg-white/10 p-7 hover:border-2 border-white-100">
+        <i class="hover:text-[#ec5242] text-white fa-2x fa-solid fa-earth-americas"></i>
+        <h3 class="text-[5vw] hover:text-white md:text-[1.3vw] text-[#fa4f40]">Around the world</h3>
         <p class="text-white">Let the world be your oyester and jump into the most breathtaking experience of your life.</p>
       </div>
-      <div class="cards w-[15%] m-[0.5vw] text-center flex flex-col gap-5 bg-white/10 p-7">
-        <i class="text-white fa-2x fa-solid fa-tree"></i>
-        <h3 class="text-[1.3vw] text-[#fa4f40]">Sceneic Outdoors</h3>
+      <div class="cards md:w-[15%] my-[0.5vw] mx-1 text-center flex items-center md:flex-col gap-5 bg-white/10 p-7 hover:border-2 border-white-100">
+        <i class="hover:text-[#ec5242] text-white fa-2x fa-solid fa-tree"></i>
+        <h3 class="text-[5vw] hover:text-white md:text-[1.3vw] text-[#fa4f40]">Sceneic Outdoors</h3>
         <p class="text-white">Outdoors is where life happens, so pack your bag for the best nature tours you have ever experienced.</p>
       </div>
-      <div class="cards w-[15%] m-[0.5vw] text-center flex flex-col gap-5 bg-white/10 p-7">
-        <i class="fa-2x text-white fa-solid fa-bed"></i>
-        <h3 class="text-[1.3vw] text-[#fa4f40]">Quality Dwellings</h3>
-        <p class="text-white">Let the world be your oyester and jump into the most breathtaking experience of your life.</p>
+      <div class="cards md:w-[15%] my-[0.5vw] mx-1 text-center flex items-center md:flex-col gap-5 bg-white/10 p-7 hover:border-2 border-white-100">
+        <i class="hover:text-[#ec5242] fa-2x text-white fa-solid fa-bed"></i>
+        <h3 class="text-[5vw] hover:text-white md:text-[1.3vw] text-[#fa4f40]">Quality Dwellings</h3>
+        <p class="text-white">Best in class hotels at your disposal during your tours with us , we pride ourselves in being able to deliver on our promises.</p>
       </div>
-      <div class="cards w-[15%] m-[0.5vw] text-center flex flex-col gap-5 bg-white/10 p-7">
-        <i class="fa-2x text-white fa-solid fa-camera"></i>
-        <h3 class="text-[1.3vw] text-[#fa4f40]">Quality Photos</h3>
-        <p class="text-white">Let the world be your oyester and jump into the most breathtaking experience of your life.</p>
+      <div class="cards md:w-[15%] my-[0.5vw] mx-1 text-center flex md:flex-col items-center gap-5 bg-white/10 p-7 hover:border-2 border-white-100">
+        <i class="hover:text-[#ec5242] fa-2x text-white fa-solid fa-camera"></i>
+        <h3 class="text-[5vw] hover:text-white md:text-[1.3vw] text-[#fa4f40]">Quality Photos</h3>
+        <p class="text-white">You will get professional Photography as part of every package to make sure your best moments are captured beutifully forever.</p>
       </div>
-      <div class="cards w-[15%] m-[0.5vw] text-center flex flex-col gap-5 bg-white/10 p-7">
-        <i class="text-white fa-2x fa-solid fa-earth-americas"></i>
-        <h3 class="text-[1.3vw] text-[#fa4f40]">World Class Tour Guides</h3>
-        <p class="text-white">Let the world be your oyester and jump into the most breathtaking experience of your life.</p>
+      <div class="cards md:w-[15%] my-[0.5vw] mx-1 text-center flex md:flex-col items-center gap-5 bg-white/10 p-7 hover:border-2 border-white-100">
+        <i class="hover:text-[#ec5242] fa-2x text-white fa-solid fa-people-group"></i>
+        <h3 class="text-[5vw] hover:text-white md:text-[1.3vw] text-[#fa4f40]">World Class Tour Guides</h3>
+        <p class="text-white">We have the most seasoned and experienced tour guides who know the locations inside out along with all the historic contexts.</p>
       </div>
     </div>
-    <h4 class="text-center t-[3vw] text-[white] underline underline-offset-8 pb-[4vh]">SEE THE CATALOGUE</h4>
+    <h4 class="hidden md:flex justify-center t-[3vw] text-[white] underline underline-offset-8 pb-[6vh] md:pb-[4vh]">SEE THE CATALOGUE</h4>
+    <div class="md:hidden flex justify-center">
+      <button class="text-white text-[6vw] bg-[#ec5242] px-12 py-4 mb-[6vw] hover:text-[#ec5242] hover:bg-white" type="button">Tour With Us</button>
+    </div>
   </section>
+   
+  <!-- staff-section -->
+  
+  <section class="staff">
+    <h2 class="text-center text-[#272a31] text-[8vw] md:text-[2.5vw] pt-10 md:pt-24">Our Staff</h2>
+    <hr class="bg-red-500 h-1 w-[55px] m-auto">
+    <div id="staffCont" class="staff-container justify-center md:px-28 mt-24 grid grid-cols-1 md:grid-cols-2 gap-16"></div>
+    <button id="more" type="button" class="md:hidden flex ml-3 mt-10 border-2 border-[#ec5242] text-center px-[37vw] py-4">MORE</button>
+    <button id="less" type="button" class="md:hidden hidden ml-1.5 mt-10 border-2 border-[#ec5242] text-center px-[39vw] py-4">LESS</button>
+  </section>
+
+  <!-- Partner-section -->
+
+  <section class="bg-[#414246] mt-[5vw]">
+    <h3 class="text-center text-[9vw] md:text-[2vw] text-[#cad3d3] pt-[4vw]">Partners</h3>
+    <div class="pt-[5vw] pb-[3vw] flex justify-center gap-12 md:gap-1.5 md:gap-28 flex-wrap">
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-google"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-youtube"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-facebook"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-yahoo"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+  </section>
+  <!-- footer-section -->
+  <footer class="mt-[1vw]">
+    <div class="flex justify-center pt-[2vw] pb-[2vw] items-center gap-4">
+      <img class="h-[15vh] md:h-[24vh]" src="./Assets/4117743.jpg" alt="logo">
+      <div>
+        <p>Copyright ©️ 2022 Lorem ipsum Travels. Some Rights Reserved</p>
+        <p class="md:flex hidden text-center w-80">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, totam minima tempore ipsam est sint modi, voluptatum suscipit praesentium vitae inventore temporibus neque doloremque deleniti reiciendis assumenda blanditiis. Odit, facilis!</p>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
