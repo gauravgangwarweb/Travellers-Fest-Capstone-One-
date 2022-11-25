@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/b45a87b3cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="hidden md:flex gap-5 bg-[#272a31] justify-end pr-[12.5vw]">
+      <div class="flex gap-2 py-3 text-white">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="flex gap-5 py-2">
+        <p class="text-white">English</p>
+        <p class="text-white">My Page</p>
+        <p class="text-white">Logout</p>
+      </div>
+    </div>
+    <nav class="hidden bg-white md:flex justify-around shadow-xl">
+      <div>
+        <a href="./index.html"><img class="h-20" src="./Assets/4117741.svg" alt="logo"></a>
+      </div>
+      <div class="hidden md:flex gap-20 text-grey items-center">
+        <div class="flex gap-16">
+          <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="./index.html">Home</a>
+          <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">Program</a>
+          <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">Join</a>
+          <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">Sponsor</a>
+          <a class="hover:text-[#ec5242] active:text-[#ec5242]" href="#">News</a>
+        </div>
+        <div>
+          <button
+            class="border-2 border-[#ec5242] p-2 hover:bg-[#ec5242] hover:text-white active:border-2 active:border-white" type="button">CC
+            Campaign</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile-menu -->
+
+    <div class="mobile-menu md:hidden absolute top-4">
+      <i id="active-menu" class="absolute top-[-5px] left-4 fa-2x fa-solid fa-bars md:hidden"></i>
+    </div>
+    <div id="hamburger-menu"
+      class="md:hidden absolute hidden h-[100%] w-[100%] bg-[#272a31] text-center justify-center">
+      <i id="close-menu" class="absolute text-white top-4 left-4 fa-2x fa-solid fa-xmark"></i>
+      <ul class="flex flex-col justify-center gap-6">
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="./index.html">Home</a></li>
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="#">Join</a></li>
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="#">Sponsar</a></li>
+        <li><a class="text-white text-[6vw] underline underline-offset-8" href="#">News</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="border-b-2 md:border-0">
+    <div class="about flex justify-center text-center flex-col">
+      <div class="flex flex-col items-center md:pt-[0] pt-[3vw]">
+        <p class="text-[6vw] text-[#ec5242] main-p md:text-[3vw]">"Hello! Aspiring Travellers"</p>
+        <h1 class="text-[10vw] md:text-[5vw]">Travellers Fest 2022</h1>
+        <div class="about-para text-center md:w-[55vw] border-2 border-red-200 bg-white/15">
+          <p class="p-5 md:p-3 md:p-7 leading-6">Quasar Expeditions is for adventurers. The highly specialized
+            itineraries are designed to make guests feel like they're James Cook or Charles Darwin. "Quasar Expeditions'
+            guides are the ultimate, passionate gatekeepers to the Galápagos Islands," one reader said. "Their
+            enthusiasm and love of the islands and the wildlife encourages you to share in their passion and desire to
+            conserve the natural beauty and habitat of the area while still allowing low-impact tourism."</p>
+        </div>
+      </div>
+      <div class="md:pt-4 md:pb-5 md:pt-16 flex flex-col md:gap-3">
+        <p>Please contact us on the email below for any further queries about our services.</p>
+        <a class="font-[500] underline underline-offset-4" href="gauravgangwar501@gmail.com">gauravgangwar501@gmail.com</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="flex flex-col items-center">
+      <h2 class="md:text-[2.5vw] text-center text-[7vw] pt-12 md:pt-24 md:pt-16">Our Logo</h2>
+      <hr class="bg-red-500 h-1 w-[55px] m-auto">
+      <p class="text-center pt-10 md:px-44">The Lorem ipsum travels logo was decided after a logo design competition
+        from 5. June to 7 during
+        the company wide logo contest , we have a really tight knit community, even the friends of the employees took
+        part and had great fun in the logo contest.</p>
+      <img class="h-[60vw] md:h-[19vw] md:w-[17vw] pt-12 pb-[3vw]" src="./Assets/4117743.jpg" alt="logo">
+    </div>
+  </section>
+  <hr class="h-1 bg-black-500">
+  <section class="flex justify-center items-center flex-col gap-10">
+    <div>
+      <h2 class="md:text-[2.5vw] text-[7vw] text-center pt-14">Recent Tours</h2>
+      <hr class="bg-red-500 h-1 w-[55px] m-auto">
+      <p class="md:text-[1.2vw] text-[4vw] pt-6">Take a look at the last two International Tours which took place in Jan
+        2019 and Feb 2019</p>
+    </div>
+    <div class="flex w-[100%] md:w-[70%] md:flex-row flex-col gap-5 md:gap-[10%]">
+      <div class="exp-card1 md:mx-0 mx-4 h-[300px] md:w-[45%] bg-[#ec5242]/80 hover:bg-transparent">
+        <div class="flex flex-col justify-center mt-[35vw] md:mt-[8vw] items-center">
+          <h2 class="md:text-[2.3vw] text-white">Jan 2019</h2>
+          <p class="text-white">Tour to Ankara, Turkey</p>
+        </div>
+      </div>
+      <div class="exp-card2 md:mx-0 mx-4 h-[300px] md:w-[45%] bg-[#ec5242]/80 hover:bg-transparent">
+        <div class="flex flex-col justify-center mt-[35vw] md:mt-[8vw] items-center">
+          <h2 class="md:text-[2.3vw] text-white">Mar 2021</h2>
+          <p class="text-white">Tour to Seville, Spain</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partner-section -->
+  <section class="bg-[#414246] mt-[5vw] md:hidden">
+    <h3 class="text-center text-[9vw] md:text-[2vw] text-[#cad3d3] pt-[4vw]">Partners</h3>
+    <div class="pt-[5vw] pb-[3vw] flex justify-center gap-12 md:gap-1.5 md:gap-28 flex-wrap">
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-google"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-youtube"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-facebook"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-yahoo"></i>
+      </div>
+      <div class="text-center">
+        <i class="hover:animate-ping fa-3x text-white fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+  </section>
+  <!-- footer-section -->
+  <footer class="mt-[4vw] bg-[#272a31] md:mt-[3vw]">
+    <div class="flex justify-center pt-[2vw] text-white pb-[2vw] items-center gap-4">
+      <img class="h-[15vh] md:h-[24vh]" src="./Assets/4117743.jpg" alt="logo">
+      <div>
+        <p>Copyright ©️ 2022 Lorem ipsum Travels. Some Rights Reserved</p>
+        <p class="md:flex hidden text-center w-80">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          A, totam minima tempore ipsam est sint modi, voluptatum suscipit praesentium vitae inventore temporibus neque
+          doloremque deleniti reiciendis assumenda blanditiis. Odit, facilis!</p>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
