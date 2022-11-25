@@ -54,7 +54,7 @@
 
 > Here is a link to the project details video.
 
-- [Loom Video Link](https://www.loom.com/share/a30c9bb4d5ac4d6492005886b4ec3152)
+- [Loom Video Link](https://www.loom.com/share/53181a07121045ccbe0bdbd9b99d7d95)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
