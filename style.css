@@ -172,4 +172,8 @@ body {
   .staff-cards:nth-child(6) {
     display: none;
   }
+
+  .about {
+    height: 625px;
+  }
 }
